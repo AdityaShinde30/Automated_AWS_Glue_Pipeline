@@ -11,5 +11,5 @@ silver/rejected_orders/ \
 gold/daily_product_sales/ \
 gold/category_sales/
 do
-  aws s3api put-object --bucket demo-medallion-etl-pipeline --key "$path"
+  aws s3api put-object --bucket aws-glue-medallion-etl-pipeline --key "$path"
 done
