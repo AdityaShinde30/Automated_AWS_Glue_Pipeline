@@ -29,10 +29,10 @@ from pyspark.sql.functions import (
 # --LOAD_DATE_VALUE   -> used only when LOAD_DATE_MODE = STATIC
 #
 # Example:
-# --ORDERS_SOURCE_PATH s3://demo-medallion-etl-pipeline/raw/orders/
-# --PRODUCTS_SOURCE_PATH s3://demo-medallion-etl-pipeline/raw/products/
-# --BRONZE_ORDERS_TARGET_PATH s3://demo-medallion-etl-pipeline/bronze/orders/
-# --BRONZE_PRODUCTS_TARGET_PATH s3://demo-medallion-etl-pipeline/bronze/products/
+# --ORDERS_SOURCE_PATH s3://aws-glue-medallion-etl-pipeline/raw/orders/
+# --PRODUCTS_SOURCE_PATH s3://aws-glue-medallion-etl-pipeline/raw/products/
+# --BRONZE_ORDERS_TARGET_PATH s3://aws-glue-medallion-etl-pipeline/bronze/orders/
+# --BRONZE_PRODUCTS_TARGET_PATH s3://aws-glue-medallion-etl-pipeline/bronze/products/
 # --PIPELINE_RUN_ID run_20260320_01
 # --LOAD_DATE_MODE FROM_PATH
 
