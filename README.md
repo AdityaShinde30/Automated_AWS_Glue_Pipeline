@@ -28,8 +28,8 @@ The entire pipeline can be orchestrated through an AWS Glue Workflow and execute
                                │
                                ▼
                     ┌──────────────────────┐
-                    │     BRONZE Layer    │
-                    │      Parquet        │
+                    │     BRONZE Layer     │
+                    │      Parquet         │
                     └──────────┬───────────┘
                                │
                          Glue Crawler
@@ -37,7 +37,7 @@ The entire pipeline can be orchestrated through an AWS Glue Workflow and execute
                                ▼
                     ┌──────────────────────┐
                     │ Glue Data Catalog /  │
-                    │    Unity Catalog    │
+                    │    Unity Catalog     │
                     └──────────┬───────────┘
                                │
                                ▼
@@ -46,8 +46,8 @@ The entire pipeline can be orchestrated through an AWS Glue Workflow and execute
                                │
                                ▼
                     ┌──────────────────────┐
-                    │      SILVER Layer   │
-                    │ Curated + Rejected  │
+                    │      SILVER Layer    │
+                    │ Curated + Rejected   │
                     └──────────┬───────────┘
                                │
                          Glue Crawler
@@ -55,7 +55,7 @@ The entire pipeline can be orchestrated through an AWS Glue Workflow and execute
                                ▼
                     ┌──────────────────────┐
                     │ Glue Data Catalog /  │
-                    │    Unity Catalog    │
+                    │    Unity Catalog     │
                     └──────────┬───────────┘
                                │
                                ▼
@@ -64,8 +64,8 @@ The entire pipeline can be orchestrated through an AWS Glue Workflow and execute
                                │
                                ▼
                     ┌──────────────────────┐
-                    │       GOLD Layer    │
-                    │     BI Reports      │
+                    │       GOLD Layer     │
+                    │     BI Reports       │
                     └──────────┬───────────┘
                                │
                          Glue Crawler
@@ -111,8 +111,6 @@ s3://<bucket-name>/
 │   ├── orders/
 │   │   └── <date>/
 │   ├── products/
-│   │   └── <date>/
-│   └── customers/
 │       └── <date>/
 │
 ├── bronze/
@@ -553,8 +551,9 @@ The final automated pipeline can be summarized as:
 ```text
 .
 ├── prepare_s3_structure/
-│   └── ...
-│
+│   
+├── layes_wise_schema/
+|
 ├── raw_to_bronze.py
 ├── bronze_to_silver.py
 ├── silver_to_gold.py
