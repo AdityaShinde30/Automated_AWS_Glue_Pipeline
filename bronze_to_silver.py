@@ -20,10 +20,10 @@ from pyspark.sql.window import Window
 # --PIPELINE_RUN_ID
 #
 # Example:
-# --BRONZE_ORDERS_PATH s3://demo-medallion-etl-pipeline/bronze/orders/
-# --BRONZE_PRODUCTS_PATH s3://demo-medallion-etl-pipeline/bronze/products/
-# --SILVER_CURATED_PATH s3://demo-medallion-etl-pipeline/silver/orders_curated/
-# --SILVER_REJECTED_PATH s3://demo-medallion-etl-pipeline/silver/rejected_orders/
+# --BRONZE_ORDERS_PATH s3://aws-glue-medallion-etl-pipeline/bronze/orders/
+# --BRONZE_PRODUCTS_PATH s3://aws-glue-medallion-etl-pipeline/bronze/products/
+# --SILVER_CURATED_PATH s3://aws-glue-medallion-etl-pipeline/silver/orders_curated/
+# --SILVER_REJECTED_PATH s3://aws-glue-medallion-etl-pipeline/silver/rejected_orders/
 # --PIPELINE_RUN_ID run_20260321_02
 
 args = getResolvedOptions(
