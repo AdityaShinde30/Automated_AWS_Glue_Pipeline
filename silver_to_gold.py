@@ -18,9 +18,9 @@ from pyspark.sql import functions as F
 # --PIPELINE_RUN_ID
 #
 # Example:
-# --SILVER_CURATED_PATH s3://demo-medallion-etl-pipeline/silver/orders_curated/
-# --GOLD_DAILY_PRODUCT_SALES_PATH s3://demo-medallion-etl-pipeline/gold/daily_product_sales/
-# --GOLD_CATEGORY_SALES_PATH s3://demo-medallion-etl-pipeline/gold/category_sales/
+# --SILVER_CURATED_PATH s3://aws-glue-medallion-etl-pipeline/silver/orders_curated/
+# --GOLD_DAILY_PRODUCT_SALES_PATH s3://aws-glue-medallion-etl-pipeline/gold/daily_product_sales/
+# --GOLD_CATEGORY_SALES_PATH s3://aws-glue-medallion-etl-pipeline/gold/category_sales/
 # --PIPELINE_RUN_ID run_20260321_03
 
 args = getResolvedOptions(
